@@ -33,7 +33,7 @@ else if($_SERVER['REQUEST_METHOD'] === 'GET'){
    else if(isset($_GET['id'])){
     $new_model->id=$_GET['id'];
     $new_model->id=strip_tags($new_model->id);
-   $new_model->catogeries_name($new_model->id);
+ //  $new_model->catogeries_name($new_model->id);
     
 echo json_encode($new_model->singleRow($new_model->id), JSON_UNESCAPED_UNICODE);
 }
